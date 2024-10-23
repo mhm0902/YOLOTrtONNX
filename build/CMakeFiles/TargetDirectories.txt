@@ -1,0 +1,3 @@
+/home/jack/github/c++/tensorrt/build/CMakeFiles/yolo11_det.dir
+/home/jack/github/c++/tensorrt/build/CMakeFiles/edit_cache.dir
+/home/jack/github/c++/tensorrt/build/CMakeFiles/rebuild_cache.dir

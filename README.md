@@ -10,13 +10,13 @@
             x = x.transpose(2, 1)
         return x
 ```
-export onnx:
-'''
+### export onnx:
+```
 from ultralytics import YOLO
 model = YOLO("${path}/yolo11n.pt")
 success = model.export(format="onnx", simplify=True)  # export the model to onnx format
-'''
-build engine:
-'''
+```
+### build engine:
+```
 trtexec --onnx=${path}/yolo11n.onnx --saveEngine=yolo11n.engine
-'''
+```

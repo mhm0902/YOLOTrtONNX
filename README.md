@@ -18,7 +18,14 @@ success = model.export(format="onnx", simplify=True)  # export the model to onnx
 ```
 ### build engine:
 ```
-trtexec --onnx=${path}/yolo11n.onnx --saveEngine=yolo11n.engine
+trtexec --onnx=${path}/yolo11n.onnx --saveEngine=${path}/yolo11n.engine
+```
+### start run
+```
+make dir build && cd build
+cmake ..
+make
+./yolo11_det -d ${path}/yolo11n.engine ../images g
 ```
 ## 部分代码参考wang-xinyu，特此提出感谢
 *https://github.com/wang-xinyu/tensorrtx

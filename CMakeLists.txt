@@ -13,7 +13,6 @@ enable_language(CUDA)
 set(CMAKE_CUDA_ARCHITECTURES 86)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
-include_directories(${PROJECT_SOURCE_DIR}/plugin)
 
 # include and link dirs of cuda and tensorrt, you need adapt them if yours are different
 if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
